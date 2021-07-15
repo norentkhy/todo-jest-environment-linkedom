@@ -1,12 +1,26 @@
-# jest-environment-jsdom-sixteen
+# jest-environment-linkedom
 
-> Jest v26 ships with JSDOM@16, so no reason to use this package
+After migrating to ts for a project, my tests in jsdom started to get really slow.
+So this is a todo project to try and get [LinkeDOM](https://github.com/WebReflection/linkedom) working in combination with testing-library/react.
 
-[Jest](https://jestjs.io) v25 by default uses [JSDOM](https://github.com/jsdom/jsdom) 15 to support Node 8. This package should also be compatible with Jest 24 and earlier.
+## notes
 
-This package comes with JSDOM v16, which also enables support for [V8 code coverage](https://jestjs.io/docs/configuration#coverageprovider-string).
+This was forked from [jest-environment-jsdom-sixteen](https://github.com/SimenB/jest-environment-jsdom-sixteen) to try and see if simple modifications will suffice. 
 
-If you need a newer JSDOM than the one that ships with Jest, install this package using `npm install --save-dev jest-environment-jsdom-sixteen` or `yarn add jest-environment-jsdom-sixteen --dev`, and edit your Jest config like so:
+## notes from fork
+to install:
+
+```bash
+  npm install --save-dev jest-environment-jsdom-sixteen
+```
+
+or
+
+```bash
+  yarn add jest-environment-jsdom-sixteen --dev
+```
+
+with jest config:
 
 ```json
 {
